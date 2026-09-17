@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <link rel="stylesheet" href="./css.css">
+    <style>
+        body {
+            background-color: lightgray;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            text-align: center;
+           
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+        }
+
+        table {
+            border: 2px solid black;
+            padding: 30px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header><b>Repaso para el examen de lenguajes</b></header>
+
+    <nav>
+        <a href="./listas.html">Listas</a>
+        <a href="./tablas.html">Tablas</a>
+        <a href="./Formularios.html">Formularios</a>
+        <a href="./flex.html">Flex y Position</a>
+        <a href="./grid.html">Grid</a>
+    </nav>
+
+    <h1>Tablas</h1>
+    <div>
+        <table>
+            <tr>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Bases de datos</td>
+                <td>Fol</td>
+                <td>Programacion</td>
+                <td rowspan="2">Lenguajes</td>
+                <td rowspan="2">Programacion</td>
+            </tr>
+            <tr>
+
+                <td>Fol</td>
+                <td>Programacion</td>
+            </tr>
+            <tr>
+                <td>Entornos</td>
+                <td>Ingles</td>
+                <td>Digitalizacion</td>
+                <td>Programacion</td>
+                <td>Bases de datos</td>
+            </tr>
+            <tr>
+                <td colspan="5">Recreo</td>
+
+            </tr>
+            <tr>
+                <td rowspan="3">Programacion</td>
+                <td rowspan="3">Sistemas</td>
+                <td rowspan="2">Bases de datos</td>
+                <td>Fol</td>
+                <td>Bases de datos</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Sistemas</td>
+                <td>Entornos</td>
+            </tr>
+            <tr>
+                <td>Ingles</td>
+                <td>Entornos</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

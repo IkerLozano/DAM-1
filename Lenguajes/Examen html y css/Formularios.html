@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formualrios</title>
+    <link rel="stylesheet" href="./css.css">
+    <style>
+        body {
+            background-color: lightgray;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 50px 10px 10px 10px;
+        }
+
+        h1:hover {
+            font-size: 40px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header><b>Repaso para el examen de lenguajes</b></header>
+
+    <nav>
+        <a href="./listas.html">Listas</a>
+        <a href="./tablas.html">Tablas</a>
+        <a href="./Formularios.html">Formularios</a>
+        <a href="./flex.html">Flex y Position</a>
+        <a href="./grid.html">Grid</a>
+    </nav>
+
+    <h1>Formualrios</h1>
+
+    <form action="" style="margin: 10px;">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <p>
+                <label for="Nombre">Nombre:</label>
+                <input type="text" id="Nombre" required>
+            </p>
+
+            <p>
+                <label for="Apellidos">Apellidos:</label>
+                <input type="text" id="Apellidos">
+            </p>
+
+            <p>
+                <label for="mail">Email: </label>
+                <input type="email" name="" id="mail" placeholder="ejemplo@iesch.org" required>
+            </p>
+
+            <p>
+                <label for="">Genero:</label><br>
+                <input type="radio" name="genero" id="m">
+                <label for="m">Masculino</label><br>
+                <input type="radio" name="genero" id="f">
+                <label for="f">Femenino</label><br>
+                <input type="radio" name="genero" id="p">
+                <label for="p">Pascual</label>
+
+            </p>
+
+            <p>
+                <label for="fecha">Fecha Nacimiento:</label>
+                <input type="date" name="" id="fecha" max="2026-01-01" min="1900-01-01">
+            </p>
+
+            <p>
+                <label for="pais">Pais de origen:</label>
+                <select name="" id="pais">
+                    <option value="" selected disabled>-----Elije uno-----</option>
+
+                    <optgroup label="España">
+                        <option value="">Teruel</option>
+                        <option value="">Madrid</option>
+                        <option value="">Malaga</option>
+                    </optgroup>
+                    <optgroup label="Latam">
+                        <option value="">Argentina</option>
+                        <option value="">Brasil</option>
+                    </optgroup>
+                    <optgroup label="EE.UU">
+                        <option value="">New York</option>
+                        <option value="">Los angeles</option>
+                        <option value="">Boston</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="color">Color de piel: </label>
+                <input type="color" name="" id="color">
+            </p>
+
+            <p>
+                <label for="tel">Numero de telefono: </label>
+                <input type="tel" name="" id="tel" placeholder="+34" maxlength="8">
+            </p>
+
+            <p>
+                <label for="file">Foto tuya: </label>
+                <input type="file" name="" id="file" accept=".pdf">
+            </p>
+
+            <p>
+                <label for="pass">Contraseña: </label>
+                <input type="password" name="" id="pass">
+            </p>
+
+            <p>
+                <input type="checkbox" name="" id="ester" required>
+                <label for="ester">Acepto los terminos</label><br>
+                <input type="checkbox" name="" id="nose" required>
+                <label for="nose">No soy Ester</label>
+            </p>
+        </fieldset>
+        <br>
+        <button type="submit">Enviar Formualario</button>
+        <button type="reset">Eliminar formulario</button>
+    </form>
+</body>
+
+</html>
